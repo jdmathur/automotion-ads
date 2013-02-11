@@ -1,0 +1,175 @@
+/* ===========================forms======================== */
+#form2{
+	text-transform: none;
+	width: 213px;
+	display: inline-block;
+	margin: 11px 0 0 72px;
+	position: relative;
+}
+#form2 select{
+	visibility: hidden;
+	float: left;
+}
+.select_1{
+	width: 187px;
+    position: relative;
+    float: left;
+}
+/* -------------
+ * Inputs
+ * ------------- */
+.jqTransformInputWrapper {
+	height: 28px;
+	padding: 0px;
+	float:left;
+	width: 100%;
+}
+.jqTransformInputInner {
+	padding: 0px;
+	margin: 0px;
+}
+.jqTransformInputInner div {
+	height: 25px;
+}
+.jqTransformInputInner div input {
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	vertical-align: middle;
+	height: 22px;
+	color: #786f78;	
+	border: none;
+	width: 175px;
+	background: url('../images/pixel.png');
+	outline: none;
+}
+/*  IE6 */
+* html .jqTransformInputInner div input {
+	padding: 6px 0 0 0;
+	margin: 0 0 0 -8px;
+	height:24px;
+}
+/* Ie7 */
+*+ html .jqTransformInputInner div input {
+	padding: 6px 0 0 0;
+	margin-left:-10px;
+	height:24px;
+}
+/*hover*/
+.jqTransformInputWrapper_hover{ background-position: left -31px ;}
+.jqTransformInputWrapper_hover div.jqTransformInputInner{ background-position: right -31px ;}
+/*focus*/
+.jqTransformInputWrapper_focus{ background-position: left -62px ;}
+.jqTransformInputWrapper_focus div.jqTransformInputInner{ background-position: right -62px ;}
+.jqTransformSafari .jqTransformInputInner div {
+	position: relative;
+	overflow: hidden;
+}
+.jqTransformSafari .jqTransformInputInner div input {
+	background-color: none;
+	position: absolute; 
+}
+/* -------------
+ * Selects
+ * ------------- */
+.jqTransformSelectWrapper {
+	width: 100%;
+	position:relative;
+	height: 25px;
+	float:left;
+	background: none;
+	border: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #fff;
+	margin: 5px 0 0 15px;
+}
+.jqTransformSelectWrapper div span {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	float: none;
+	position: absolute;
+	white-space: nowrap;
+	height: 26px;
+	line-height: 24px;
+	overflow: hidden;
+	cursor:pointer;
+	color: #fff;
+	margin: 0px 0 0 9px;
+}
+.jqTransformSelectWrapper  a.jqTransformSelectOpen {
+	display: block;
+	position: absolute;
+	right: 4px;
+	width: 21px;
+	height: 21px;
+	background: url(../images/combo.png) 0 50% no-repeat;
+	top: 2px;
+}
+.jqTransformSelectWrapper ul {
+	position: absolute;
+	width: 100%;
+	top: 30px;
+	left: 0px;
+	list-style: none;
+	background-color: #FFF;
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	height: 120px;
+	overflow: auto;
+	overflow-y: auto;
+	z-index:10;
+}
+.jqTransformSelectWrapper ul a {
+	display: block;
+	padding: 0px 10px;
+	text-decoration: none;
+	color: #786f78;
+	background-color: #FFF;
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+}
+.jqTransformSelectWrapper ul a.selected {
+	background: #d0c8b3;
+	color: #383238;
+}
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {
+	background: #a19882;
+	color: #fff;
+}
+/* -------------
+ * Radios
+ * ------------- */
+.jqTransformRadioWrapper {float: left;display:block;	margin: 1px 38px 0 0px;}
+.jqTransformRadio {
+	background: transparent url(../images/radio.png) no-repeat center top;
+	vertical-align: middle;
+	height: 18px;
+	width: 18px;
+	display:block;/*display: -moz-inline-block;*/
+}
+/* -------------
+ * Checkboxes
+ * ------------- */
+span.jqTransformCheckboxWrapper{
+	display:block;float:left;
+	margin: 8px 9px 0 0px;
+}
+a.jqTransformCheckbox {
+	background: transparent url(../images/check.png) no-repeat center top;
+	vertical-align: middle;
+	height: 20px;
+	width: 20px;
+	display:block;/*display: -moz-inline-block;*/
+}
+/* -------------
+ * Checked - Used for both Radio and Checkbox
+ * ------------- */
+a.jqTransformChecked { background-position: center bottom;}
+
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {display: none;}
