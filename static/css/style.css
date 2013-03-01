@@ -390,7 +390,7 @@ margin-top: 23px;
 position: relative;
 display: inline-block;
 width: 294px;
-height: 162px;
+height: 148px;
 background: #d0c8b3;
 margin: 0 28px 20px 0;
 }
@@ -402,7 +402,7 @@ position: relative;
 display: block;
 width: 280px;
 height: 119px;
-margin: 7px;
+margin: 3px;
 }
 .list2>li>h3{
 margin: -2px 7px 0;
@@ -788,4 +788,13 @@ width: 30px;
 .contact-item >li:first-child
 {
     font-weight: bold;
+}
+#list3>li
+{
+    width: 186px
+}
+#grid112
+{
+    height: 635px;
+    overflow-y: scroll;
 }
